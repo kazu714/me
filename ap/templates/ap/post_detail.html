@@ -1,0 +1,9 @@
+{% extends "ap/base.html" %}
+
+{% block main %}
+    <p><a href="/">ホーム</a></p>
+    <h1>{{object.title}}</h1>
+    <p>{{object.body}}</p>
+    <p><a href="{% url 'delete' object.id %}" >削除</a></p>
+    <p><a href="{% url 'update' object.id %}" >編集</a></p>
+{% endblock main %}

@@ -1,0 +1,9 @@
+{% extends "ap/base.html" %}
+{% block main %}
+<p>{{object.title}}を本当に削除しますか？</p>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="削除">
+</form>
+{% endblock %}
