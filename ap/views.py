@@ -22,7 +22,7 @@ class Create(CreateView):
     model = Post
     
     # 編集対象にするフィールド
-    fields = ["title", "body",  "tags"]
+    fields = ["title", "body", "category", "tags"]
     
 
 from django.views.generic.edit import UpdateView, DeleteView, UpdateView
