@@ -46,10 +46,7 @@ class Post(models.Model):
         blank=True,
         null=False)
         
-    category = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE)
-        
+       
     tags = models.ManyToManyField(
         Tag,
         blank=True)

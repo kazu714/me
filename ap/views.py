@@ -22,14 +22,14 @@ class Create(CreateView):
     model = Post
     
     # 編集対象にするフィールド
-    fields = ["title", "body", "category", "tags"]
+    fields = ["title", "body",  "tags"]
     
 
 from django.views.generic.edit import UpdateView, DeleteView, UpdateView
 
 class Update(UpdateView):
     model = Post
-    fields = ["title", "body", "category", "tags"]
+    fields = ["title", "body", "tags"]
     
 class Delete(DeleteView):
     model = Post
@@ -37,4 +37,4 @@ class Delete(DeleteView):
 
 class Update(UpdateView):
     model = Post
-    fields = ["title","body","category","tags"]
+    fields = ["title","body","tags"]
